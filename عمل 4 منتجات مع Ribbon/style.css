@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    background-color: #EEE;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.continer {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.continer .Featured {
+    background-color: #316978;
+    height: 4vh;
+    width: 20vw;
+    margin: 4vh 4vw;
+    align-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-size: 1.8vw;
+}
+
+.continer .full {
+    width: 100%;
+    height: fit-content;
+}
+
+.card-continer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 5vh;
+    justify-content: flex-start;
+    font-size: 1.7vw;
+    flex-direction: row-reverse;
+
+}
+
+img {
+    width: 17vw;
+    height: 22vh;
+    /* margin: 0vh 0vw 0 0vw; */
+}
+
+.first {
+    box-sizing: border-box;
+    width: 18vw;
+    box-shadow: 0vh 0vw  0vw  0.7vw #EEE;
+    /* background-color: #EEE; */
+    height: 30vh;
+    text-align: center;
+    margin: 2vh 2vw;
+    color: #7a7070;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+span {
+    color:rgb(49,105,120) ;
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+    z-index: 2;
+    background-color: white;
+    width: 6vw;
+    left: 34%;
+    background-color: white;
+}
+
+.spa span:first-of-type {
+    text-decoration: line-through;
+    color: #c4bbbb;
+    z-index: 2;
+    left: 4vw;
+}
+
+.spa span:last-of-type {
+    color: #e94702;
+    z-index: 2;
+    position: absolute;
+    margin-left: 3.7vw;
+    padding: 0;
+    width: 4.6vw;
+    text-align: end;
+}
+.spa {
+    position: relative;
+}
+.spa::after {
+    content: "Sale!";
+    color: white;
+    align-content: center;
+    justify-content: center;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: #e94702;
+    position: absolute;
+    top:  -2.5vw;
+    left: -2.5vw;
+}
+
+div.first::before {
+    content: "";
+    background-color: black;
+    width: 15vw;
+    height: 0.1vh;
+    position: absolute;
+    left: 10%;
+    bottom: 0.8vw;
+    z-index: 1;
+}
